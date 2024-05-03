@@ -1,0 +1,189 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    color: hsl(234, 29%, 20%);
+}
+
+
+
+.container{
+    padding: 20px 25px 0 25px;
+   
+}
+
+.bg{
+    width: 100%;
+}
+
+h1{
+    font-weight: 700;
+    padding-bottom: 10px;
+    font-size: 40px;
+}
+
+p{
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+
+.product-cont{
+    display: flex;
+    flex-direction: row;
+}
+
+.product-cont img + p{
+    margin: 8px 5px;
+    padding-bottom: 0px;   
+}
+
+.form-cont{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-width: 350px;
+}
+
+.form-cont p{
+ padding-bottom: 6px; 
+ font-weight: bold;
+ font-size: 12px;
+ 
+}
+
+
+
+#email, button{
+    width: 100%;
+    padding: 18px 0px 18px 12px; 
+    font-size: 14px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin-bottom: 18px;
+    outline: none;
+    cursor: pointer;
+}
+
+button{
+    background-color: hsl(234, 29%, 20%);
+    font-size: 14px;
+    color: #fff;
+    font-weight: 500;
+    border: none;
+    transition: 0.5s;
+}
+
+button:hover{
+    background-color: hsl(4, 100%, 67%);
+    
+    color: #fff;
+}
+
+
+.success-cont{
+    margin-top: 100px;
+    padding: 0 30px;
+    display: none;
+}
+
+.success-cont img, h1{
+    padding-bottom: 20px;
+}
+
+.success-cont button{
+   margin-top: 60%; 
+}
+
+.state{
+    display: flex;
+    justify-content: space-between;
+}
+.errormsg{
+    color: tomato;
+    font-size: 12px;
+    display: none;
+}
+
+.attribution {
+ font-size: 13px; 
+ text-align: center;
+ }
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
+
+@media (min-width: 768px) {
+
+    body{
+    background-color: hsl(234, 29%, 20%);
+    
+    }
+
+    .parent{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    background-color: #fff;
+    align-items: center;
+    width: 50%;
+    margin: 50px auto;
+    border-radius: 20px;
+    padding: 18px 20px;
+    }
+
+    .img-cont{
+        background-image: url("assets/images/illustration-sign-up-desktop.svg");
+        display: block;
+        background-size: cover;
+        background-position: center;
+        width: 50%;
+        height: 420px;
+        margin: 0;
+        border-radius: 10px;
+    }
+
+    .img-cont img{
+        display: none;
+    }
+
+    .container{
+        margin: 10px 0;
+        padding: 20px 10px 0 25px;
+    }
+
+   
+    #email, button{ 
+        padding: 15px 0px 15px 12px;  
+    }
+    
+   .form-cont{
+    width: 300px;
+    margin-bottom: 0;
+  }
+
+
+  .success-cont{
+    background-color: #fff;
+    margin: 100px auto;
+    width: 400px;
+    padding: 20px 35px;
+    border-radius: 30px;
+    display: none;
+  }
+
+
+.success-cont img, h1{
+    padding-bottom: 20px;
+}
+
+.success-cont button{
+   margin-top: 10%; 
+}
+   
+}
